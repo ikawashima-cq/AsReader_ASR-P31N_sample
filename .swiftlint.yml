@@ -1,0 +1,71 @@
+# 下の2つとの併用はできず、これに記載したルールのみ適用したい場合に設定
+# whitelist_rules:
+# デフォルトが有効で無効にするルール
+disabled_rules:
+- trailing_whitespace
+- nesting
+- type_name
+- conditional_returns_on_newline
+# デフォルトが無効で有効にするルール
+opt_in_rules:
+# - attributes
+- closure_spacing
+- conditional_returns_on_newline
+- empty_count
+# - explicit_init
+- first_where
+- force_unwrapping
+# - number_separator
+- overridden_super_call
+- private_outlet
+- prohibited_super_call
+- redundant_nil_coalescing
+# - object_literal
+# Lint対象から外すファイル
+excluded:
+- Pods
+- Carthage
+- R.generated.swift
+# 一行の文字数
+line_length:
+- 400 # warning
+- 100000000 # error
+# クラスの行数
+type_body_length:
+- 500 # warning
+- 1200 # error
+# 変数名の最大文字数
+variable_name_max_length:
+- 10 # warning
+- 15 # error
+# 変数名の最小文字数
+variable_name_min_length:
+- 1 # warning
+- 0 # error
+# 関数の長さ
+function_body_length:
+- 80 # warning
+- 400 # error
+# 1ファイルの行数
+file_length:
+- 1000  # warning
+- 1800 # error
+# 関数の引数の数
+function_parameter_count:
+- 12 # warning
+- 13 # error
+# 関数内の複雑性(ネストの深いifやifの連続)
+cyclomatic_complexity:
+- 39 # warning
+- 40 # error
+# 識別子名
+identifier_name:
+  min_length:
+    warning: 1
+    error: 0
+  max_length:
+    warning: 40
+    error: 120
+  excluded:
+    - id
+    - URL

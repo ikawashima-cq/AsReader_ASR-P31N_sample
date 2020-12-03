@@ -1,0 +1,6 @@
+framework module ASRP31N_SDK {
+  umbrella header "ASRP31N_SDK.h"
+
+  export *
+  module * { export * }
+}

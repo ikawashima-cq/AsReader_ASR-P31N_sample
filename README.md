@@ -9,3 +9,6 @@ CocoaPods: Latest
 ```
 pod install
 ```
+
+# Document
+https://asreader.jp/downloads/asr-p31n/
